@@ -11,8 +11,10 @@ def even_list(int_list: List[int]) -> List[int]:
     Returns:
             A list of even integers.
     """
-    # TODO: Implement even_list
-    pass
+    for i in range(len(int_list)-1, -1, -1):
+        if int_list[i] % 2 is 1:
+            del int_list[i]
+    return int_list
 
 # Skeleton code for sum_of_squares_of_even
 def sum_of_squares_of_even(even_int_list: List[int]) -> int:
